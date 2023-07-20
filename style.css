@@ -170,6 +170,7 @@ body {
 
 .banner-container .banner-img {
     background: lightgray 50% / cover no-repeat;
+
 }
 
 /* feature section styles */
@@ -295,7 +296,72 @@ body {
 }
 
 
-.feature2-img img {}
+/* footer section styles */
+footer {
+    height: 70vh;
+    background: #0B0223;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-top: 3rem;
+
+}
+
+.logo-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.logo-title span {
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.footer-description {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4.3rem;
+    color: #FFF;
+}
+
+.footer-privacy {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3.5rem;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-copywright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
 
 /* responsive media queries */
 /* mobile devices */
@@ -378,25 +444,55 @@ body {
         margin-bottom: 50px;
 
     }
+
     /* responsive feature2 styles ends here */
-    .main-game-genre-container{
+    .main-game-genre-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         gap: 10px;
         /* height: 100px;
         width: 100px;*/
-    } 
-    .genre{
-        padding: 2px 5px;   
+        margin-top: -50px;
+    }
+
+    .genre {
+        padding: 2px 5px;
 
     }
-    .genre-title{
+
+    .genre-title {
         font-size: .75rem;
     }
-    .game-genre{
+
+    .game-genre {
         padding-right: 250px;
         width: 30%;
     }
+
+    /* responsive footer styles starts here */
+    footer {
+        height: 100%;
+    }
+
+    .footer-description {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+        margin-left: 20px;
+    }
+
+    .footer-privacy {
+        gap: 5px;
+        margin-left: 25px;
+        padding-bottom: 20px;
+    }
+
+    .footer-copywright {
+        padding-bottom: 20px;
+    }
+
+
 
 }
