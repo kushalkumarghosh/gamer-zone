@@ -253,9 +253,49 @@ body {
 
 }
 
-.feature2-img img {
-    
+/* game-genre section styles */
+.game-genre {
+    max-width: 100%;
+    margin: 0 auto;
+
 }
+
+.main-game-genre-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 170px;
+    padding-left: 150px;
+
+}
+
+.genre-title {
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.genre {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+}
+
+.row-2 {
+    /* padding: 50px; */
+    margin-left: 48px;
+    gap: 0px;
+}
+
+.hover-effect:hover {
+    border-radius: 50px;
+    background: #FFF;
+    border: 1px solid palevioletred;
+}
+
+
+.feature2-img img {}
 
 /* responsive media queries */
 /* mobile devices */
@@ -270,7 +310,7 @@ body {
     .menu-list,
     .banner-container,
     .cards,
-    .features2{
+    .features2 {
         flex-direction: column;
     }
 
@@ -298,7 +338,7 @@ body {
 
     /* responsive banner styles ends here */
 
-   .feature1-content {
+    .feature1-content {
         margin: 0 auto;
     }
 
@@ -309,39 +349,54 @@ body {
     .card-description {
         margin-bottom: 40px;
     }
-    /* responsive feature styles ends here */
-  
 
-    .features2{
+    /* responsive feature styles ends here */
+
+
+    .features2 {
         /* margin-bottom: 200px; */
         /* margin: 0 auto; */
         margin-top: -200px;
         gap: 50px;
-     
-    }
-    .feature2-content{
-        padding-right: 40px;
-       
-        
+
     }
 
-        
-    .feature2-img img{
-        width: 100%; 
+    .feature2-content {
+        padding-right: 40px;
+
+    }
+
+    .feature2-img img {
+        width: 100%;
         position: relative;
     }
-    .feature2-img .small-img{
+
+    .feature2-img .small-img {
         position: absolute;
         width: 40%;
         margin-left: 150px;
         margin-bottom: 50px;
-       
-       
-         
+
     }
-    
+    /* responsive feature2 styles ends here */
+    .main-game-genre-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 10px;
+        /* height: 100px;
+        width: 100px;*/
+    } 
+    .genre{
+        padding: 2px 5px;   
 
-
-
+    }
+    .genre-title{
+        font-size: .75rem;
+    }
+    .game-genre{
+        padding-right: 250px;
+        width: 30%;
+    }
 
 }
